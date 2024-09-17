@@ -33,7 +33,7 @@ func runTmux(args []string, opts *Options) (int, error) {
 	// M        Both    The mouse position
 	// W        Both    The window position on the status line
 	// S        -y      The line above or below the status line
-	tmuxArgs := []string{"display-popup", "-E", "-B", "-d", dir}
+	tmuxArgs := []string{"display-popup", "-E", "-d", dir}
 	switch opts.Tmux.position {
 	case posUp:
 		tmuxArgs = append(tmuxArgs, "-xC", "-y0")
