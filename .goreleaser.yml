@@ -9,6 +9,7 @@ before:
 builds:
   - id: fzf
     goos:
+      - darwin
       - linux
       - windows
       - freebsd
